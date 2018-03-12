@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 class SSLValidationHandler: NSObject {
-    static let xcA = CustomSessionDelegate()
-    static let xcB = SessionManager()
     
     private static var sharedService: SSLValidationHandler = {
         let service = SSLValidationHandler()
@@ -39,9 +37,6 @@ class SSLValidationHandler: NSObject {
 //                                             serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
 //        )
 //        sessionManager.request("https://URL.com").response { response in
-//            print("DT1: \(response.error)")
-//            print("DT2: \(response.data)")
-//            print("DT3: \(response.response)")
 //            self.showResult(success: response.response != nil)
 //            //callback(response.response != nil)
 //            callback(false)
